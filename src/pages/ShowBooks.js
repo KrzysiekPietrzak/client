@@ -10,6 +10,7 @@ function App(){
 
         const fetchData = async () => {
     const response = await fetch("'https://serv4.onrender.com/books")
+    console.log(await response.json())
     const dataBook = await response.json()
         setData(dataBook)
 
