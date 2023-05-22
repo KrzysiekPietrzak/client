@@ -26,7 +26,7 @@ function App(){
 
   const fetchData2 = () => {
     console.log(localStorage.getItem("_id"));
-    fetch("http://localhost:1337/userinfo/"+localStorage.getItem("_id"))
+    fetch("https://serv4.onrender.com/userinfo/"+localStorage.getItem("_id"))
       .then(response => {
         return response.json()
       })

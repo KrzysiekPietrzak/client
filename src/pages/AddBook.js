@@ -8,7 +8,7 @@ function App() {
 
   async function newBook(event){
     event.preventDefault()
-    const response = await fetch('http://localhost:1337/api/addbook',{
+    const response = await fetch('https://serv4.onrender.com/api/addbook',{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'

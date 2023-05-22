@@ -9,7 +9,7 @@ function App(){
   const [data, setData] = useState([])
 
         const fetchData = async () => {
-    const response = await fetch("http://localhost:1337/books")
+    const response = await fetch("'https://serv4.onrender.com/books")
     const dataBook = await response.json()
         setData(dataBook)
 
