@@ -9,7 +9,7 @@ function App(){
   const [data2, setData2] = useState([])
 
   const fetchData = () => {
-    fetch("http://localhost:1337/book/"+params.id)
+    fetch("https://serv4.onrender.com/book/"+params.id)
       .then(response => {
         return response.json()
       })
